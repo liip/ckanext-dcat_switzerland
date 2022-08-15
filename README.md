@@ -1,7 +1,8 @@
 ckanext-switzerland
 ===================
 
-CKAN extension for DCAT-AP Switzerland, templates and different plugins for [opendata.swiss](https://opendata.swiss).
+CKAN extension for DCAT-AP Switzerland as a basic setup for the liip-demo-ckan instance
+at Datopian
 
 ## Requirements
 
