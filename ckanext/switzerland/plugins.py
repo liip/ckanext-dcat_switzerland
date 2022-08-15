@@ -258,7 +258,6 @@ class OgdchGroupPlugin(plugins.SingletonPlugin):
 
 class OgdchOrganizationPlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IConfigurer, inherit=True)
-    plugins.implements(plugins.IOrganizationController, inherit=True)
 
     def before_view(self, org_dict):
         """
