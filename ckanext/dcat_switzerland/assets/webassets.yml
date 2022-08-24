@@ -1,0 +1,14 @@
+# dcat_switzerland-js:
+#   filter: rjsmin
+#   output: ckanext-dcat_switzerland/%(version)s-dcat_switzerland.js
+#   contents:
+#     - js/dcat_switzerland.js
+#   extra:
+#     preload:
+#       - base/main
+
+# dcat_switzerland-css:
+#   filter: cssrewrite
+#   output: ckanext-dcat_switzerland/%(version)s-dcat_switzerland.css
+#   contents:
+#     - css/dcat_switzerland.css
