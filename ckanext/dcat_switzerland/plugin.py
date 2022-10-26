@@ -26,7 +26,10 @@ class DcatSwitzerlandShowcaseIDatasetFormPlugin(ShowcasePlugin):
         schema.update({
             'twitter': [toolkit.get_validator('ignore_missing'),
                         toolkit.get_converter('convert_to_extras'),
-                        ]
+                        ],
+            'github': [toolkit.get_validator('ignore_missing'),
+                       toolkit.get_converter('convert_to_extras'),
+                       ]
         })
         return schema
 
@@ -44,6 +47,8 @@ class DcatSwitzerlandShowcaseIDatasetFormPlugin(ShowcasePlugin):
         schema = super(DcatSwitzerlandShowcaseIDatasetFormPlugin, self).show_package_schema()
         schema.update({
             'twitter': [toolkit.get_converter('convert_from_extras'),
-                        toolkit.get_validator('ignore_missing')]
+                        toolkit.get_validator('ignore_missing')],
+            'github': [toolkit.get_converter('convert_from_extras'),
+                       toolkit.get_validator('ignore_missing')]
         })
         return schema

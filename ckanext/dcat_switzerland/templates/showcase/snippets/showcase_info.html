@@ -10,10 +10,16 @@
         <p>{{ pkg.author }}</p>
     {% endif %}
 
-        {% if pkg.twitter %}
-            <a href="{{ pkg.twitter }}" target="_blank">
-                <i class="fa fa-twitter"></i> {{ pkg.twitter }}
-            </a>
+    {% if pkg.twitter %}
+        <a href="{{ pkg.twitter }}" target="_blank">
+            <i class="fa fa-twitter"></i> {{ pkg.twitter }}
+        </a>
+        {% endif %}
+        <br>
+    {% if pkg.github %}
+        <a href="{{ pkg.github }}" target="_blank">
+            <i class="fa fa-github"></i> {{ pkg.github }}
+        </a>
         {% endif %}
 
     {% if pkg.url %}
