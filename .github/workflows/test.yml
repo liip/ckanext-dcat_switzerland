@@ -36,6 +36,10 @@ jobs:
         pip install -r requirements.txt
         pip install -r dev-requirements.txt
         pip install -e .
+        # Install ckanext-showcase
+        git clone https://github.com/ckan/ckanext-showcase
+        pip install -e ckanext-showcase
+        pip install -r ckanext-showcase/requirements.txt
     - name: Setup extension
       # Extra initialization steps
       run: |
