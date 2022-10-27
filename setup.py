@@ -85,7 +85,8 @@ setup(
     entry_points='''
         [ckan.plugins]
         dcat_switzerland=ckanext.dcat_switzerland.plugin:DcatSwitzerlandPlugin
-
+        showcase_switzerland=ckanext.dcat_switzerland.plugin:DcatSwitzerlandShowcaseIDatasetFormPlugin
+        
         [babel.extractors]
         ckan = ckan.lib.extract:extract_ckan
     ''',

@@ -33,6 +33,10 @@ jobs:
     - name: Install requirements
       # Install any extra requirements your extension has here (dev requirements, other extensions etc)
       run: |
+        # Install ckanext-showcase
+        git clone https://github.com/ckan/ckanext-showcase
+        pip install -e ckanext-showcase
+        pip install -r ckanext-showcase/requirements.txt
         pip install -r requirements.txt
         pip install -r dev-requirements.txt
         pip install -e .

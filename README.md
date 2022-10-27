@@ -4,6 +4,10 @@
 
 **TODO:** Put a description of your extension here:  What does it do? What features does it have? Consider including some screenshots or embedding a video!
 
+#### [Showcase](https://github.com/ckan/ckanext-showcase) plugin :
+###### twitter and github fields 
+They will link to a `twitter account` and `github repository` related to the showcase's submitter.
+![twitter-github](screenshots/showcase-info-twitter-github.png)
 
 ## Requirements
 
